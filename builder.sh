@@ -28,7 +28,7 @@ clone_or_update_repo() {
 }
 
 # Array to store repository URLs
-repos=("nekoray=https://github.com/MatsuriDayo/nekoray.git"
+repos=("nekoray=https://github.com/buliaoyin/nekoray.git"
        "v2ray-core=https://github.com/MatsuriDayo/v2ray-core.git"
        "sing-box-extra=https://github.com/buliaoyin/nekoray-macos.git"
        "sing-box=https://github.com/MatsuriDayo/sing-box.git"
