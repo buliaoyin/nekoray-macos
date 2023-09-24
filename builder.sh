@@ -22,15 +22,15 @@ clone_or_update_repo() {
   else
     git clone --recursive "$url" "$repo"
   fi
-  if [ -n "$(git -C "$repo" tag --list)" ]; then
-    git -C "$repo" checkout "$(git -C "$repo" describe --tags $(git -C "$repo" rev-list --tags --max-count=1))"
-  fi
+  # if [ -n "$(git -C "$repo" tag --list)" ]; then
+  #   git -C "$repo" checkout "$(git -C "$repo" describe --tags $(git -C "$repo" rev-list --tags --max-count=1))"
+  # fi
 }
 
 # Array to store repository URLs
-repos=("nekoray=https://github.com/buliaoyin/nekoray.git"
+repos=("nekoray=https://github.com/MatsuriDayo/nekoray.git"
        "v2ray-core=https://github.com/MatsuriDayo/v2ray-core.git"
-       "sing-box-extra=https://github.com/buliaoyin/sing-box-extra.git"
+       "sing-box-extra=https://github.com/MatsuriDayo/sing-box-extra.git"
        "sing-box=https://github.com/MatsuriDayo/sing-box.git"
        "libneko=https://github.com/MatsuriDayo/libneko.git"
        "Xray-core=https://github.com/MatsuriDayo/Xray-core.git")
